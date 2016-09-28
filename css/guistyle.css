@@ -1,0 +1,60 @@
+#WebGL-output {
+	 
+	position:relative; 
+	 
+}
+	  
+#gui-placement{
+	
+	position:absolute;
+	background: transparent; 
+	top:0;
+	left:10rem;
+	right:50rem; 
+}
+
+#lut-placement {
+	
+	position:absolute;
+	background-color: #000;
+	background: transparent; 
+	right:15rem;
+	  
+}
+
+#arrow-container {
+	
+	position:absolute;
+	left:8rem;
+	top:8rem;
+}
+
+#speed-slider-placement {
+	
+	position:absolute;
+	bottom:1rem;  
+	background: transparent;
+	width:100%;
+	left:16rem;
+}
+
+#time-slider-placement {
+	
+	position:absolute;
+	bottom:8rem;  
+	background: transparent; 
+	left:8rem;
+	right:8rem;
+}
+ 
+#timeSliderSlider {
+	
+	width:100%;
+}
+
+#playButton {
+	
+	position:absolute;
+	bottom:0;
+	left:8rem;
+}

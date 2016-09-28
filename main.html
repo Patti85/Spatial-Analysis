@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>OceanTEA: Spatial Analysis</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/oceantea.css">
+	<link rel="stylesheet" href="css/guistyle.css">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="libs/bootstrap-slider/css/bootstrap-slider.min.css">
+	<script src="libs/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+	<script src="libs/three.min.js"></script>
+	<script src="libs/Lut.js"></script>
+	<script type="text/javascript" src="libs/OrbitControls.js"></script>
+
+
+	<script type="text/javascript" src="js/oceanFLoor.js"></script>
+	<script type="text/javascript" src="js/lut.js"></script>
+	<script type="text/javascript" src="js/grid.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/tests.js"></script>
+	<script type="text/javascript" src="js/station.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript" src="js/arrowWithMarks.js"></script>
+	<script type="text/javascript" src="js/checkboxFunctions.js"></script>
+	<script type="text/javascript" src="js/helpers.js"></script>
+
+
+	<style>
+		body {
+			/* set margin to 0 and overflow to hidden, to use the complete page */
+			
+			<!--margin: 0;
+			overflow: hidden;
+			--> width: 50%;
+			float: left
+		}
+	</style>
+
+
+</head>
+
+<body>
+	<div id="maincontainer" class="container-fluid">
+		<div class="row" id="rowNavBar">
+			<div class="col-lg-12">
+				<ul class="nav nav-tabs" style="margin: 5px 0px 15px 0px;">
+					<li><a href="/manage.html">Manage Time Series</a>
+					</li>
+					<li><a href="/">Time Series Exploration</a>
+					</li>
+					<li class="active"><a href="/spatial_analysis.html">Spatial Analysis</a>
+					</li>
+					<li><a href="/pattern_discovery.html">Temporal Pattern Discovery</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="WebGL-output">
+		<div id="gui-placement">
+
+		</div>
+		<div id="arrow-container">
+		</div>
+
+		<div id="lut-placement">
+
+			<Button id="infoButton" class="btn btn-primary oceanteaSelectionBtn">Help</Button>
+			<Button id="resetButton" class="btn btn-primary oceanteaSelectionBtn">Reset</Button>
+			<div>
+				<input type="checkbox" id="oceanFloorVisibleCheckbox" value="oceanFloorVisible" onchange="oceanFloorVisibleCheck()" checked> Ocean Floor Visible
+				<br>
+				<input type="checkbox" id="stationsVisibleCheckbox" value="stationsVisible" onchange="stationsVisibleCheck()" checked> Stations Visible
+				<br>
+				<input type="checkbox" id="colorGradientOnArrowsCheckbox" value="colorOn" onchange="colorGradientOnArrowsCheck()" checked> Color Gradient On Arrows Visible
+				<br>
+				<input type="checkbox" id="arrowsVisibleCheckbox" value="arrowsOn" onchange="arrowsVisibleCheck()" checked> Arrows Visible
+				<br>
+			</div>
+
+			<div id="lut-container">
+			</div>
+
+		</div>
+	</div>
+
+	<div id="time-slider-placement">
+		<input id="timeSlider" data-slider-id='timeSliderSlider' type="text" data-slider-min="0" data-slider-max="0" data-slider-step="1" data-slider-value="0" />
+	</div>
+
+	<Button id="playButton" class="btn btn-primary oceanteaSelectionBtn">Play</Button>
+
+	<div id="speed-slider-placement">
+		<input id="speedSlider" data-slider-id='speedSliderSlider' type="text" data-slider-min="0" data-slider-max="0" data-slider-step="1" data-slider-value="0" />
+	</div>
+
+</body>
+
+</html>

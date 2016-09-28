@@ -1,0 +1,40 @@
+#maincontainer {
+	padding: 6px 15px 6px 15px;
+}
+
+.controlBtnGroup {
+	margin: 3px 15px 3px 3px;
+}
+
+.slider-selection {
+	background: #BABABA;
+}
+
+.oceanteaSelectionTable {
+	width: 100%;
+	display: table;
+	margin: -3px 0px 0px 0px;
+}
+
+.oceanteaSelectionTableRow {
+	width: 100%;
+	display: table-row;
+}
+
+.oceanteaSelectionTableCell {
+	display: table-cell;
+}
+
+.oceanteaLabelSection {
+	text-align: left;
+	width: 9.75em;
+}
+
+.oceanteaBtnSection {
+	text-align: left;
+	float: left;
+}
+
+.oceanteaSelectionBtn {
+	margin: 3px;
+}
